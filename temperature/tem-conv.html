@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Temperature Converter</title>
+        <meta name="description" content="Free online temperature converter - converts between 6 units of temperature, including kelvin [K], Celsius [&#176;C], Fahrenheit [&#176;F], Rankine [&#176;R], etc. Also, explore many other unit converters or learn more about temperature unit conversions."/>
+        <link rel="stylesheet" href="D:\shummu\Documents\un 1\HTML\style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="D:\shummu\Documents\un 1\HTML\js\common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="D:\shummu\Documents\un 1\HTML\manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="D:\shummu\Documents\un 1\HTML\uc.html">Home</a>
+                    / <a href='D:\shummu\Documents\un 1\HTML\common converter.html'>Common Converters</a>
+                    / Temperature Converter
+                </div>
+                <h1>Temperature Converter</h1>
+                <div id="unquickcalc" style="display:none;"></div>
+                <div id="ucresult" class="ucresulttext"></div>
+                <form>
+                    <table id="uctable">
+                        <tr>
+                            <td class="uccell">
+                                <label for="ucfrom">From:</label>
+                                <br>
+                                <input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus>
+                            </td>
+                            <td class="uccell">
+                                <label for="ucto">To:</label>
+                                <br>
+                                <input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uccell">
+                                <select name="ucfromunit" id="ucfromunit" size="6" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="kelvin [K] [2:1:0]" selected>kelvin [K]</option>
+                                    <option value="Celsius [&#176;C] [2:-272.15:-273.15]">Celsius [&#176;C]</option>
+                                    <option value="Fahrenheit [&#176;F] [2:-457.87:-459.67]">Fahrenheit [&#176;F]</option>
+                                    <option value="Rankine [&#176;R] [2:1.8:0]">Rankine [&#176;R]</option>
+                                    <option value="Reaumur [&#176;r] [2:-217.72:-218.52]">Reaumur [&#176;r]</option>
+                                    <option value="Triple point of water [2:0.0036608581051398:0]">Triple point of water</option>
+                                </select>
+                            </td>
+                            <td class="uccell">
+                                <select name="uctounit" id="uctounit" size="6" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="kelvin [K] [2:1:0]">kelvin [K]</option>
+                                    <option value="Celsius [&#176;C] [2:-272.15:-273.15]" selected>Celsius [&#176;C]</option>
+                                    <option value="Fahrenheit [&#176;F] [2:-457.87:-459.67]">Fahrenheit [&#176;F]</option>
+                                    <option value="Rankine [&#176;R] [2:1.8:0]">Rankine [&#176;R]</option>
+                                    <option value="Reaumur [&#176;r] [2:-217.72:-218.52]">Reaumur [&#176;r]</option>
+                                    <option value="Triple point of water [2:0.0036608581051398:0]">Triple point of water</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <script>
+                    noValidation = 0;
+                </script>
+                <br>
+                <h3>Popular temperature unit conversions</h3>
+                <div id="toother">
+                    <div>
+                        <a href="/temperature/celsius-to-fahrenheit.htm">Celsius to Fahrenheit</a>
+                    </div>
+                    <div>
+                        <a href="/temperature/fahrenheit-to-celsius.htm">Fahrenheit to Celsius</a>
+                    </div>
+                    <div>
+                        <a href="/temperature/celsius-to-kelvin.htm">Celsius to Kelvin</a>
+                    </div>
+                    <div>
+                        <a href="/temperature/kelvin-to-celsius.htm">Kelvin to Celsius</a>
+                    </div>
+                    <div>
+                        <a href="/temperature/fahrenheit-to-kelvin.htm">Fahrenheit to Kelvin</a>
+                    </div>
+                    <div>
+                        <a href="/temperature/kelvin-to-fahrenheit.htm">Kelvin to Fahrenheit</a>
+                    </div>
+                </div>
+                <br>
+                <h3>Complete list of temperature units for conversion</h3>
+                <ul class="allunits">
+                    <li>kelvin [K]</li>
+                    <li>
+                        1 Celsius [&#176;C] = 274.15 kelvin [K]
+                        <div>
+                            <a href="/temperature/celsius-to-kelvin.htm">Celsius to kelvin</a>
+                            , &nbsp;<a href="/temperature/kelvin-to-celsius.htm">kelvin to Celsius</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Fahrenheit [&#176;F] = 255.9277777778 kelvin [K]
+                        <div>
+                            <a href="/temperature/fahrenheit-to-kelvin.htm">Fahrenheit to kelvin</a>
+                            , &nbsp;<a href="/temperature/kelvin-to-fahrenheit.htm">kelvin to Fahrenheit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Rankine [&#176;R] = 0.5555555556 kelvin [K]
+                        <div>
+                            <a href="/temperature/rankine-to-kelvin.htm">Rankine to kelvin</a>
+                            , &nbsp;<a href="/temperature/kelvin-to-rankine.htm">kelvin to Rankine</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Reaumur [&#176;r] = 274.4 kelvin [K]
+                        <div>
+                            <a href="/temperature/reaumur-to-kelvin.htm">Reaumur to kelvin</a>
+                            , &nbsp;<a href="/temperature/kelvin-to-reaumur.htm">kelvin to Reaumur</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Triple point of water = 273.16 kelvin [K]
+                        <div>
+                            <a href="/temperature/triple-point-of-water-to-kelvin.htm">Triple point of water to kelvin</a>
+                            , &nbsp;<a href="/temperature/kelvin-to-triple-point-of-water.htm">kelvin to Triple point of water</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
