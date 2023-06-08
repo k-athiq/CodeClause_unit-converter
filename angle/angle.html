@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Angle Converter</title>
+        <meta name="description" content="Free online angle converter - converts between 15 units of angle, including degree [&#176;], radian [rad], grad [^g], minute ['], etc. Also, explore many other unit converters or learn more about angle unit conversions."/>
+        <link rel="stylesheet" href="D:\shummu\Documents\un 1\HTML\style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="D:\shummu\Documents\un 1\HTML\js\common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="D:\shummu\Documents\un 1\HTML\manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="D:\shummu\Documents\un 1\HTML\uc.html">Home</a>
+                    / <a href='D:\shummu\Documents\un 1\HTML\common converter.html'>Common Converters</a>
+                    / Angle Converter
+                </div>
+                <h1>Angle Converter</h1>
+                <div id="unquickcalc" style="display:none;"></div>
+                <div id="ucresult" class="ucresulttext"></div>
+                <form>
+                    <table id="uctable">
+                        <tr>
+                            <td class="uccell">
+                                <label for="ucfrom">From:</label>
+                                <br>
+                                <input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus>
+                            </td>
+                            <td class="uccell">
+                                <label for="ucto">To:</label>
+                                <br>
+                                <input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uccell">
+                                <select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="degree [&#176;] [100000000000]" selected>degree [&#176;]</option>
+                                    <option value="radian [rad] [1745329251.9943]">radian [rad]</option>
+                                    <option value="grad [^g] [111111111111.11]">grad [^g]</option>
+                                    <option value="minute ['] [6000000000000]">minute [']</option>
+                                    <option value="second [&#34;] [3.6E+14]">second [&#34;]</option>
+                                    <option value="gon [111111111111.11]">gon</option>
+                                    <option value="sign [3333333333.3333]">sign</option>
+                                    <option value="mil [1777777777777.8]">mil</option>
+                                    <option value="revolution [r] [277777777.77778]">revolution [r]</option>
+                                    <option value="circle [277777777.77778]">circle</option>
+                                    <option value="turn [277777777.77778]">turn</option>
+                                    <option value="quadrant [1111111111.1111]">quadrant</option>
+                                    <option value="right angle [1111111111.1111]">right angle</option>
+                                    <option value="sextant [1666666666.6667]">sextant</option>
+                                </select>
+                            </td>
+                            <td class="uccell">
+                                <select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="degree [&#176;] [100000000000]">degree [&#176;]</option>
+                                    <option value="radian [rad] [1745329251.9943]" selected>radian [rad]</option>
+                                    <option value="grad [^g] [111111111111.11]">grad [^g]</option>
+                                    <option value="minute ['] [6000000000000]">minute [']</option>
+                                    <option value="second [&#34;] [3.6E+14]">second [&#34;]</option>
+                                    <option value="gon [111111111111.11]">gon</option>
+                                    <option value="sign [3333333333.3333]">sign</option>
+                                    <option value="mil [1777777777777.8]">mil</option>
+                                    <option value="revolution [r] [277777777.77778]">revolution [r]</option>
+                                    <option value="circle [277777777.77778]">circle</option>
+                                    <option value="turn [277777777.77778]">turn</option>
+                                    <option value="quadrant [1111111111.1111]">quadrant</option>
+                                    <option value="right angle [1111111111.1111]">right angle</option>
+                                    <option value="sextant [1666666666.6667]">sextant</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <script>
+                    noValidation = 0;
+                </script>
+                <br>
+                <h3>Popular angle unit conversions</h3>
+                <div id="toother">
+                    <div>
+                        <a href="/angle/radians-to-degrees.htm">radians to degrees</a>
+                    </div>
+                    <div>
+                        <a href="/angle/degrees-to-radians.htm">degrees to radians</a>
+                    </div>
+                </div>
+                <br>
+                <h3>Complete list of angle units for conversion</h3>
+                <ul class="allunits">
+                    <li>degree [&#176;]</li>
+                    <li>
+                        1 radian [rad] = 57.2957795131 degree [&#176;]
+                        <div>
+                            <a href="/angle/radians-to-degrees.htm">radian to degree</a>
+                            , &nbsp;<a href="/angle/degrees-to-radians.htm">degree to radian</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 grad [^g] = 0.9 degree [&#176;]
+                        <div>
+                            <a href="/angle/grad-to-degree.htm">grad to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-grad.htm">degree to grad</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 minute ['] = 0.0166666667 degree [&#176;]
+                        <div>
+                            <a href="/angle/minute-to-degree.htm">minute to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-minute.htm">degree to minute</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 second [&#34;] = 0.0002777778 degree [&#176;]
+                        <div>
+                            <a href="/angle/second-to-degree.htm">second to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-second.htm">degree to second</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 gon = 0.9 degree [&#176;]
+                        <div>
+                            <a href="/angle/gon-to-degree.htm">gon to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-gon.htm">degree to gon</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 sign = 30 degree [&#176;]
+                        <div>
+                            <a href="/angle/sign-to-degree.htm">sign to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-sign.htm">degree to sign</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 mil = 0.05625 degree [&#176;]
+                        <div>
+                            <a href="/angle/mil-to-degree.htm">mil to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-mil.htm">degree to mil</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 revolution [r] = 360 degree [&#176;]
+                        <div>
+                            <a href="/angle/revolution-to-degree.htm">revolution to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-revolution.htm">degree to revolution</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 circle = 360 degree [&#176;]
+                        <div>
+                            <a href="/angle/circle-to-degree.htm">circle to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-circle.htm">degree to circle</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 turn = 360 degree [&#176;]
+                        <div>
+                            <a href="/angle/turn-to-degree.htm">turn to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-turn.htm">degree to turn</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 quadrant = 90 degree [&#176;]
+                        <div>
+                            <a href="/angle/quadrant-to-degree.htm">quadrant to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-quadrant.htm">degree to quadrant</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 right angle = 90 degree [&#176;]
+                        <div>
+                            <a href="/angle/right-angle-to-degree.htm">right angle to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-right-angle.htm">degree to right angle</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 sextant = 60 degree [&#176;]
+                        <div>
+                            <a href="/angle/sextant-to-degree.htm">sextant to degree</a>
+                            , &nbsp;<a href="/angle/degree-to-sextant.htm">degree to sextant</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
