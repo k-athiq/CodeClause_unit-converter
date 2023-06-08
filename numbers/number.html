@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Numbers Converter</title>
+        <meta name="description" content="Free online numbers converter - converts between 40 units of numbers, including binary, octal, decimal, hexadecimal, etc. Also, explore many other unit converters or learn more about numbers unit conversions."/>
+        <link rel="stylesheet" href="D:\shummu\Documents\un 1\HTML\style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="D:\shummu\Documents\un 1\HTML\js\common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="D:\shummu\Documents\un 1\HTML\manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="D:\shummu\Documents\un 1\HTML\uc.html">Home</a>
+                    / <a href='D:\shummu\Documents\un 1\HTML\common converter.html'>Common Converters</a>
+                    / Numbers Converter
+                </div>
+                <h1>Numbers Converter</h1>
+                <div id="unquickcalc" style="display:none;"></div>
+                <div id="ucresult" class="ucresulttext"></div>
+                <form>
+                    <table id="uctable">
+                        <tr>
+                            <td class="uccell">
+                                <label for="ucfrom">From:</label>
+                                <br>
+                                <input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus>
+                            </td>
+                            <td class="uccell">
+                                <label for="ucto">To:</label>
+                                <br>
+                                <input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uccell">
+                                <select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="binary [3:2]" selected>binary</option>
+                                    <option value="octal [3:8]">octal</option>
+                                    <option value="decimal [3:10]">decimal</option>
+                                    <option value="hexadecimal [3:16]">hexadecimal</option>
+                                    <option value="base-2 [3:2]">base-2</option>
+                                    <option value="base-3 [3:3]">base-3</option>
+                                    <option value="base-4 [3:4]">base-4</option>
+                                    <option value="base-5 [3:5]">base-5</option>
+                                    <option value="base-6 [3:6]">base-6</option>
+                                    <option value="base-7 [3:7]">base-7</option>
+                                    <option value="base-8 [3:8]">base-8</option>
+                                    <option value="base-9 [3:9]">base-9</option>
+                                    <option value="base-10 [3:10]">base-10</option>
+                                    <option value="base-11 [3:11]">base-11</option>
+                                    <option value="base-12 [3:12]">base-12</option>
+                                    <option value="base-13 [3:13]">base-13</option>
+                                    <option value="base-14 [3:14]">base-14</option>
+                                    <option value="base-15 [3:15]">base-15</option>
+                                    <option value="base-16 [3:16]">base-16</option>
+                                    <option value="base-17 [3:17]">base-17</option>
+                                    <option value="base-18 [3:18]">base-18</option>
+                                    <option value="base-19 [3:19]">base-19</option>
+                                    <option value="base-20 [3:20]">base-20</option>
+                                    <option value="base-21 [3:21]">base-21</option>
+                                    <option value="base-22 [3:22]">base-22</option>
+                                    <option value="base-23 [3:23]">base-23</option>
+                                    <option value="base-24 [3:24]">base-24</option>
+                                    <option value="base-25 [3:25]">base-25</option>
+                                    <option value="base-26 [3:26]">base-26</option>
+                                    <option value="base-27 [3:27]">base-27</option>
+                                    <option value="base-28 [3:28]">base-28</option>
+                                    <option value="base-29 [3:29]">base-29</option>
+                                    <option value="base-30 [3:30]">base-30</option>
+                                    <option value="base-31 [3:31]">base-31</option>
+                                    <option value="base-32 [3:32]">base-32</option>
+                                    <option value="base-33 [3:33]">base-33</option>
+                                    <option value="base-34 [3:34]">base-34</option>
+                                    <option value="base-35 [3:35]">base-35</option>
+                                    <option value="base-36 [3:36]">base-36</option>
+                                </select>
+                            </td>
+                            <td class="uccell">
+                                <select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="binary [3:2]">binary</option>
+                                    <option value="octal [3:8]" selected>octal</option>
+                                    <option value="decimal [3:10]">decimal</option>
+                                    <option value="hexadecimal [3:16]">hexadecimal</option>
+                                    <option value="base-2 [3:2]">base-2</option>
+                                    <option value="base-3 [3:3]">base-3</option>
+                                    <option value="base-4 [3:4]">base-4</option>
+                                    <option value="base-5 [3:5]">base-5</option>
+                                    <option value="base-6 [3:6]">base-6</option>
+                                    <option value="base-7 [3:7]">base-7</option>
+                                    <option value="base-8 [3:8]">base-8</option>
+                                    <option value="base-9 [3:9]">base-9</option>
+                                    <option value="base-10 [3:10]">base-10</option>
+                                    <option value="base-11 [3:11]">base-11</option>
+                                    <option value="base-12 [3:12]">base-12</option>
+                                    <option value="base-13 [3:13]">base-13</option>
+                                    <option value="base-14 [3:14]">base-14</option>
+                                    <option value="base-15 [3:15]">base-15</option>
+                                    <option value="base-16 [3:16]">base-16</option>
+                                    <option value="base-17 [3:17]">base-17</option>
+                                    <option value="base-18 [3:18]">base-18</option>
+                                    <option value="base-19 [3:19]">base-19</option>
+                                    <option value="base-20 [3:20]">base-20</option>
+                                    <option value="base-21 [3:21]">base-21</option>
+                                    <option value="base-22 [3:22]">base-22</option>
+                                    <option value="base-23 [3:23]">base-23</option>
+                                    <option value="base-24 [3:24]">base-24</option>
+                                    <option value="base-25 [3:25]">base-25</option>
+                                    <option value="base-26 [3:26]">base-26</option>
+                                    <option value="base-27 [3:27]">base-27</option>
+                                    <option value="base-28 [3:28]">base-28</option>
+                                    <option value="base-29 [3:29]">base-29</option>
+                                    <option value="base-30 [3:30]">base-30</option>
+                                    <option value="base-31 [3:31]">base-31</option>
+                                    <option value="base-32 [3:32]">base-32</option>
+                                    <option value="base-33 [3:33]">base-33</option>
+                                    <option value="base-34 [3:34]">base-34</option>
+                                    <option value="base-35 [3:35]">base-35</option>
+                                    <option value="base-36 [3:36]">base-36</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <script>
+                    noValidation = 1;
+                </script>
+                <br>
+                <h3>Popular numbers unit conversions</h3>
+                <div id="toother">
+                    <div>
+                        <a href="/numbers/binary-to-decimal.htm">binary to decimal</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/decimal-to-binary.htm">decimal to binary</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/decimal-to-hex.htm">decimal to hex</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/hex-to-decimal.htm">hex to decimal</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/binary-to-hex.htm">binary to hex</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/hex-to-binary.htm">hex to binary</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

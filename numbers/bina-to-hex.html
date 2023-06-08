@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Convert binary to hex</title>
+        <meta name="description" content="Instant free online tool for binary to hexadecimal conversion or vice versa. The binary to hexadecimal conversion table and conversion steps are also listed. Also, explore tools to convert binary or hexadecimal to other numbers units or learn more about numbers conversions."/>
+        <link rel="stylesheet" href="//d15gdne58bo42a.cloudfront.net/style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//d15gdne58bo42a.cloudfront.net/js/common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="/">Home</a>
+                    / <a href='/numbers-converter.html'>Numbers Conversion</a>
+                    / Convert binary to hex
+                </div>
+                <h1>Convert binary to hex</h1>
+                <p>
+                    Please provide values below to convert binary to hexadecimal, or 
+                    <a href="/numbers/hex-to-binary.htm">
+                        <i>vice versa</i>
+                    </a>
+                    .
+                </p>
+                <div id="unquickcalc" style="display:none;"></div>
+                <form>
+                    <div id="undctable">
+                        <table align="center" cellpadding="5">
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucfrom">From:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucfrom" class="ucdcinput" id="ucfrom" onKeyUp="ucDCUpdateResult(0);" autofocus>
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucfrom">
+                                        <b>binary</b>
+                                    </label>
+                                </td>
+                                <td rowspan="2">
+                                    <a href="/numbers/hex-to-binary.htm">
+                                        <img src="/images/switch.svg" alt="switch" width="15" height="20">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucto">To:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucto" class="ucdcinput" id="ucto" onKeyUp="ucDCUpdateResult(1);">
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucto">
+                                        <b>hexadecimal</b>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="uclabel">&nbsp;</td>
+                                <td align="center">
+                                    <input type="hidden" name="ucfromunit" id="ucfromunit" value="binary [3:2]">
+                                    <input type="hidden" name="uctounit" id="uctounit" value="hexadecimal [3:16]">
+                                    <input type="submit" value="Convert" class="ucdcsubmit" onclick="ucDCUpdateResult(processingType);return false;">
+                                    &nbsp;<input type="reset" value="Clear" class="ucdcsubmit">
+                                </td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <div id="ucresult" class="ucresulttext"></div>
+                    </div>
+                </form>
+                <script>
+                    noValidation = 1;
+                    var processingType = 0;
+                </script>
+                <br>
+                <h3>Binary</h3>
+                <p>
+                    <b>Definition:</b>
+                    The binary numeral system is a base-2 numeral system that typically only uses two symbols: 0 and 1. Thus, it has a radix, or a base number of unique digits of two. Each digit in binary is referred to as a bit.
+                </p>
+                <p>It is a system that uses positional notation in which the same symbol is used for different orders of magnitude, where each "place" represents a different value dependent on whichever base is being used; in the case of binary, the base is 2.</p>
+                <p>
+                    In the binary number 101, the first "1" on the left is in the 2<sup>2</sup>
+                    place, the "0" is in the 2<sup>1</sup>
+                    place, and the second "1" is in the 2<sup>0</sup>
+                    place. If this were converted to decimal:
+                </p>
+                <p align="center">
+                    101 = 1 &#215;2<sup>2</sup>
+                    + 0 &#215;2<sup>1</sup>
+                    + 1 &#215;2<sup>0</sup>
+                    = 4 + 0 + 1 = 5
+                </p>
+                <p>
+                    <b>History/origin:</b>
+                    There is evidence of systems related to binary numbers in a number of different cultures including that of ancient Egypt, China, and India. However, the modern binary number system was studied and developed by Thomas Harriot, Juan Caramuel y Lobkowitz, and Gottfried Leibniz in the 16th and 17th centuries.
+                </p>
+                <p>
+                    <b>Current use:</b>
+                    The binary system is widely used in almost all modern computers or computer-based devices. Because of this, it is sometimes referred to as the "language of computers." Its widespread use can be attributed to the ease with which it can be implemented in a compact, reliable manner using 0s and 1s to represent states such as on or off, open or closed, etc.
+                </p>
+                <h3>Hexadecimal</h3>
+                <p>
+                    <b>Definition:</b>
+                    The hexadecimal numeral system is a base-16 positional numeral system that uses the same symbols as the decimal system to represent the values of zero to nine (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) and the letters A, B, C, D, E, and F to represent the values of ten to fifteen. Being a positional numeral system means that each position represents a different magnitude. For example, using the hex number AAA:
+                </p>
+                <p align="center">
+                    AAA = 10 &#215;16<sup>2</sup>
+                    + 10 &#215;16<sup>1</sup>
+                    + 10 &#215;16<sup>0</sup>
+                    = 2560 + 160 + 10 = 2730
+                </p>
+                <p>As can be seen, although the symbols occupying the three positions shown are the same, "A," the magnitude of each is one power of 16 apart.</p>
+                <p>
+                    <b>History/origin:</b>
+                    The term hexadecimal is derived from the prefix "hexa" from Greek for "six" and "decimal," which is derived from the Latin meaning "tenth." The symbols A-F were not always used for the values 10 through 15 in the earlier instances of the hexadecimal system. In the 1950s, some used the digits 0 through 5 with a bar over each value, while others used the letters u through z. Yet others used K, S, N, J, F, and L or even F, G, J, K, Q, and W.
+                </p>
+                <p>As can be seen, there were many different ways in which the values of 10 through 15 were represented in the past, showing the fairly arbitrary nature of symbol choice. Both capital A-F as well as lower case a-f are used today to represent these symbols.</p>
+                <p>
+                    <b>Current use:</b>
+                    The hexadecimal numeral system is widely used throughout computer system design and programming. This is partly due to it being easier for humans to read hexadecimal values than it is for them to read binary-coded values.
+                </p>
+                <br>
+                <br>
+                <h3>Popular Numbers Unit Conversions</h3>
+                <div id="toother">
+                    <div>
+                        <a href="/numbers/binary-to-decimal.htm">binary to decimal</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/decimal-to-binary.htm">decimal to binary</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/decimal-to-hex.htm">decimal to hex</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/hex-to-decimal.htm">hex to decimal</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/binary-to-hex.htm">binary to hex</a>
+                    </div>
+                    <div>
+                        <a href="/numbers/hex-to-binary.htm">hex to binary</a>
+                    </div>
+                </div>
+                <br>
+                <h3>Convert Binary to Other Numbers Units</h3>
+                <div id="toother">
+                    <div>
+                        <a href="binary-to-octal.htm">Binary to Octal</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-decimal.htm">binary to decimal</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-break.htm">Binary to Break</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-2.htm">Binary to Base-2</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-3.htm">Binary to Base-3</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-4.htm">Binary to Base-4</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-5.htm">Binary to Base-5</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-6.htm">Binary to Base-6</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-7.htm">Binary to Base-7</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-8.htm">Binary to Base-8</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-9.htm">Binary to Base-9</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-10.htm">Binary to Base-10</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-11.htm">Binary to Base-11</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-12.htm">Binary to Base-12</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-13.htm">Binary to Base-13</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-14.htm">Binary to Base-14</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-15.htm">Binary to Base-15</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-16.htm">Binary to Base-16</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-17.htm">Binary to Base-17</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-18.htm">Binary to Base-18</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-19.htm">Binary to Base-19</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-20.htm">Binary to Base-20</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-21.htm">Binary to Base-21</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-22.htm">Binary to Base-22</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-23.htm">Binary to Base-23</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-24.htm">Binary to Base-24</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-25.htm">Binary to Base-25</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-26.htm">Binary to Base-26</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-27.htm">Binary to Base-27</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-28.htm">Binary to Base-28</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-29.htm">Binary to Base-29</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-30.htm">Binary to Base-30</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-31.htm">Binary to Base-31</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-32.htm">Binary to Base-32</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-33.htm">Binary to Base-33</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-34.htm">Binary to Base-34</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-35.htm">Binary to Base-35</a>
+                    </div>
+                    <div>
+                        <a href="binary-to-base-36.htm">Binary to Base-36</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
