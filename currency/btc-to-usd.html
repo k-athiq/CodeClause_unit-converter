@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Convert BTC to USD</title>
+        <meta name="description" content="Instant free online tool for BTC to USD conversion or vice versa. The BTC [Bitcoin] to USD [United States Dollar] conversion table and conversion steps are also listed. Also, explore tools to convert BTC or USD to other currency units or learn more about currency conversions."/>
+        <link rel="stylesheet" href="//d15gdne58bo42a.cloudfront.net/style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//d15gdne58bo42a.cloudfront.net/js/common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="/">Home</a>
+                    / <a href='/currency-converter.html'>Currency Conversion</a>
+                    / Convert BTC to USD
+                </div>
+                <h1>Convert BTC to USD</h1>
+                <p>
+                    Please provide values below to convert BTC [Bitcoin] to USD [United States Dollar], or 
+                    <a href="usd-to-btc.htm">
+                        <i>vice versa</i>
+                    </a>
+                    .
+                </p>
+                <div id="unquickcalc" style="display:none;"></div>
+                <form>
+                    <div id="undctable">
+                        <table align="center" cellpadding="5">
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucfrom">From:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucfrom" class="ucdcinput" id="ucfrom" onKeyUp="ucDCUpdateResult(0);" autofocus>
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucfrom">
+                                        <b>BTC</b>
+                                    </label>
+                                </td>
+                                <td rowspan="2">
+                                    <a href="usd-to-btc.htm">
+                                        <img src="/images/switch.svg" alt="switch" width="15" height="20">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucto">To:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucto" class="ucdcinput" id="ucto" onKeyUp="ucDCUpdateResult(1);">
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucto">
+                                        <b>USD</b>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="uclabel">&nbsp;</td>
+                                <td align="center">
+                                    <input type="hidden" name="ucfromunit" id="ucfromunit" value="BTC [Bitcoin] [0.000036790967]">
+                                    <input type="hidden" name="uctounit" id="uctounit" value="USD [United States Dollar] [1]">
+                                    <input type="submit" value="Convert" class="ucdcsubmit" onclick="ucDCUpdateResult(processingType);return false;">
+                                    &nbsp;<input type="reset" value="Clear" class="ucdcsubmit">
+                                </td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <div id="ucresult" class="ucresulttext"></div>
+                    </div>
+                </form>
+                <script>
+                    noValidation = 0;
+                    var processingType = 0;
+                    function timeConverter(UNIX_timestamp) {
+                        var a = new Date(UNIX_timestamp * 1000);
+                        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        var year = a.getFullYear();
+                        var month = months[a.getMonth()];
+                        var date = a.getDate();
+                        var hour = a.getHours();
+                        var min = a.getMinutes();
+                        var sec = a.getSeconds();
+                        var time = month + '. ' + date + ', ' + year + ' ' + hour + ':' + min + ':' + sec;
+                        return time;
+                    }
+                    document.write("<div style=\"font-size:11px;text-align:center;\">based on the " + timeConverter(1685804408) + " exchange rate from openexchangerates.org.</div>");
+                </script>
+                <br>
+                <br>
+                <h3>BTC to USD Conversion Table</h3>
+                <table class="datatable">
+                    <tr>
+                        <th align="right">BTC [Bitcoin]</th>
+                        <th>USD [United States Dollar]</th>
+                    </tr>
+                    <tr>
+                        <td align="right">0.01 Bitcoin</td>
+                        <td>271.8058484301 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">0.1 Bitcoin</td>
+                        <td>2718.0584843013 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">1 Bitcoin</td>
+                        <td>27180.584843013 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">2 Bitcoin</td>
+                        <td>54361.169686027 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">3 Bitcoin</td>
+                        <td>81541.75452904 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">5 Bitcoin</td>
+                        <td>135902.92421507 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">10 Bitcoin</td>
+                        <td>271805.84843013 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">20 Bitcoin</td>
+                        <td>543611.69686026 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">50 Bitcoin</td>
+                        <td>1359029.2421507 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">100 Bitcoin</td>
+                        <td>2718058.4843013 United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td align="right">1000 Bitcoin</td>
+                        <td>27180584.843013 United States Dollar</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <h3>How to Convert BTC to USD</h3>
+                <p class="bigtext">
+                    1 Bitcoin = 27180.584843013 United States Dollar<br>
+                    1 United States Dollar = 3.6791E-5 Bitcoin<br>
+                </p>
+                <p class="bigtext">
+                    <b>Example:</b>
+                    convert 15 Bitcoin to United States Dollar:<br>15 Bitcoin = 15 &times;27180.584843013 United States Dollar = 407708.7726452 United States Dollar
+                </p>
+                <br>
+                <h3>Popular Currency Conversions</h3>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="homelist">
+                    <tr>
+                        <td valign="top" width="50%">
+                            <ul>
+                                <li>
+                                    <a href="/currency/eur-to-usd.htm">EUR to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/gbp-to-usd.htm">GBP to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/mxn-to-usd.htm">MXN to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/aud-to-usd.htm">AUD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/brl-to-usd.htm">BRL to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cad-to-usd.htm">CAD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/chf-to-usd.htm">CHF to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cny-to-usd.htm">CNY to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/inr-to-usd.htm">INR to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/jpy-to-usd.htm">JPY to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/rub-to-usd.htm">RUB to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/hkd-to-usd.htm">HKD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-usd.htm">BTC to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/aud-to-btc.htm">AUD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/brl-to-btc.htm">BRL to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cad-to-btc.htm">CAD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/chf-to-btc.htm">CHF to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/eur-to-btc.htm">EUR to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/gbp-to-btc.htm">GBP to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/inr-to-btc.htm">INR to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/jpy-to-btc.htm">JPY to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/mxn-to-btc.htm">MXN to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/rub-to-btc.htm">RUB to BTC</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td valign="top" width="50%">
+                            <ul>
+                                <li>
+                                    <a href="/currency/usd-to-eur.htm">USD to EUR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-gbp.htm">USD to GBP</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-mxn.htm">USD to MXN</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-aud.htm">USD to AUD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-brl.htm">USD to BRL</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-cad.htm">USD to CAD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-chf.htm">USD to CHF</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-cny.htm">USD to CNY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-inr.htm">USD to INR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-jpy.htm">USD to JPY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-rub.htm">USD to RUB</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-hkd.htm">USD to HKD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-btc.htm">USD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-aud.htm">BTC to AUD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-brl.htm">BTC to BRL</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-cad.htm">BTC to CAD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-chf.htm">BTC to CHF</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-eur.htm">BTC to EUR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-gbp.htm">BTC to GBP</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-inr.htm">BTC to INR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-jpy.htm">BTC to JPY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-mxn.htm">BTC to MXN</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-rub.htm">BTC to RUB</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <h3>Convert BTC to Other Currency Units</h3>
+                <div id="toother">
+                    <div>
+                        <a href="btc-to-eur.htm">BTC to EUR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-aud.htm">BTC to AUD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cad.htm">BTC to CAD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-chf.htm">BTC to CHF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cny.htm">BTC to CNY</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-eur.htm">BTC to EUR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gbp.htm">BTC to GBP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-inr.htm">BTC to INR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-jpy.htm">BTC to JPY</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mxn.htm">BTC to MXN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-break.htm">BTC to Break</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-aed.htm">BTC to AED</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-afn.htm">BTC to AFN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-all.htm">BTC to ALL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-amd.htm">BTC to AMD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ang.htm">BTC to ANG</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-aoa.htm">BTC to AOA</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ars.htm">BTC to ARS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-awg.htm">BTC to AWG</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-azn.htm">BTC to AZN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bam.htm">BTC to BAM</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bbd.htm">BTC to BBD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bdt.htm">BTC to BDT</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bgn.htm">BTC to BGN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bhd.htm">BTC to BHD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bif.htm">BTC to BIF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bmd.htm">BTC to BMD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bnd.htm">BTC to BND</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bob.htm">BTC to BOB</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-brl.htm">BTC to BRL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bsd.htm">BTC to BSD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-btn.htm">BTC to BTN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bwp.htm">BTC to BWP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-byn.htm">BTC to BYN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-bzd.htm">BTC to BZD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cdf.htm">BTC to CDF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-clf.htm">BTC to CLF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-clp.htm">BTC to CLP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cnh.htm">BTC to CNH</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cop.htm">BTC to COP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-crc.htm">BTC to CRC</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cuc.htm">BTC to CUC</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cup.htm">BTC to CUP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-cve.htm">BTC to CVE</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-czk.htm">BTC to CZK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-djf.htm">BTC to DJF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-dkk.htm">BTC to DKK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-dop.htm">BTC to DOP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-dzd.htm">BTC to DZD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-egp.htm">BTC to EGP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ern.htm">BTC to ERN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-etb.htm">BTC to ETB</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-fjd.htm">BTC to FJD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-fkp.htm">BTC to FKP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gel.htm">BTC to GEL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ggp.htm">BTC to GGP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ghs.htm">BTC to GHS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gip.htm">BTC to GIP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gmd.htm">BTC to GMD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gnf.htm">BTC to GNF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gtq.htm">BTC to GTQ</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-gyd.htm">BTC to GYD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-hkd.htm">BTC to HKD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-hnl.htm">BTC to HNL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-hrk.htm">BTC to HRK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-htg.htm">BTC to HTG</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-huf.htm">BTC to HUF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-idr.htm">BTC to IDR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ils.htm">BTC to ILS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-imp.htm">BTC to IMP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-iqd.htm">BTC to IQD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-irr.htm">BTC to IRR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-isk.htm">BTC to ISK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-jep.htm">BTC to JEP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-jmd.htm">BTC to JMD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-jod.htm">BTC to JOD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kes.htm">BTC to KES</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kgs.htm">BTC to KGS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-khr.htm">BTC to KHR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kmf.htm">BTC to KMF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kpw.htm">BTC to KPW</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-krw.htm">BTC to KRW</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kwd.htm">BTC to KWD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kyd.htm">BTC to KYD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-kzt.htm">BTC to KZT</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lak.htm">BTC to LAK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lbp.htm">BTC to LBP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lkr.htm">BTC to LKR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lrd.htm">BTC to LRD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lsl.htm">BTC to LSL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-lyd.htm">BTC to LYD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mad.htm">BTC to MAD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mdl.htm">BTC to MDL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mga.htm">BTC to MGA</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mkd.htm">BTC to MKD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mmk.htm">BTC to MMK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mnt.htm">BTC to MNT</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mop.htm">BTC to MOP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mru.htm">BTC to MRU</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mur.htm">BTC to MUR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mvr.htm">BTC to MVR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mwk.htm">BTC to MWK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-myr.htm">BTC to MYR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-mzn.htm">BTC to MZN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-nad.htm">BTC to NAD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ngn.htm">BTC to NGN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-nio.htm">BTC to NIO</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-nok.htm">BTC to NOK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-npr.htm">BTC to NPR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-nzd.htm">BTC to NZD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-omr.htm">BTC to OMR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pab.htm">BTC to PAB</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pen.htm">BTC to PEN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pgk.htm">BTC to PGK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-php.htm">BTC to PHP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pkr.htm">BTC to PKR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pln.htm">BTC to PLN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-pyg.htm">BTC to PYG</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-qar.htm">BTC to QAR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ron.htm">BTC to RON</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-rsd.htm">BTC to RSD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-rub.htm">BTC to RUB</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-rwf.htm">BTC to RWF</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sar.htm">BTC to SAR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sbd.htm">BTC to SBD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-scr.htm">BTC to SCR</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sdg.htm">BTC to SDG</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sek.htm">BTC to SEK</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sgd.htm">BTC to SGD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-shp.htm">BTC to SHP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sll.htm">BTC to SLL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-sos.htm">BTC to SOS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-srd.htm">BTC to SRD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ssp.htm">BTC to SSP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-std.htm">BTC to STD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-stn.htm">BTC to STN</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-svc.htm">BTC to SVC</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-syp.htm">BTC to SYP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-szl.htm">BTC to SZL</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-thb.htm">BTC to THB</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-tjs.htm">BTC to TJS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-tmt.htm">BTC to TMT</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-tnd.htm">BTC to TND</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-top.htm">BTC to TOP</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-try.htm">BTC to TRY</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ttd.htm">BTC to TTD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-twd.htm">BTC to TWD</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-tzs.htm">BTC to TZS</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-uah.htm">BTC to UAH</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-ugx.htm">BTC to UGX</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-uyu.htm">BTC to UYU</a>
+                    </div>
+                    <div>
+                        <a href="btc-to-uzs.htm">BTC to UZS</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

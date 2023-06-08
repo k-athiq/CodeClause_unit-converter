@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Convert CAD to BTC</title>
+        <meta name="description" content="Instant free online tool for CAD to BTC conversion or vice versa. The CAD [Canadian Dollar] to BTC [Bitcoin] conversion table and conversion steps are also listed. Also, explore tools to convert CAD or BTC to other currency units or learn more about currency conversions."/>
+        <link rel="stylesheet" href="//d15gdne58bo42a.cloudfront.net/style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//d15gdne58bo42a.cloudfront.net/js/common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="/">Home</a>
+                    / <a href='/currency-converter.html'>Currency Conversion</a>
+                    / Convert CAD to BTC
+                </div>
+                <h1>Convert CAD to BTC</h1>
+                <p>
+                    Please provide values below to convert CAD [Canadian Dollar] to BTC [Bitcoin], or 
+                    <a href="btc-to-cad.htm">
+                        <i>vice versa</i>
+                    </a>
+                    .
+                </p>
+                <div id="unquickcalc" style="display:none;"></div>
+                <form>
+                    <div id="undctable">
+                        <table align="center" cellpadding="5">
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucfrom">From:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucfrom" class="ucdcinput" id="ucfrom" onKeyUp="ucDCUpdateResult(0);" autofocus>
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucfrom">
+                                        <b>CAD</b>
+                                    </label>
+                                </td>
+                                <td rowspan="2">
+                                    <a href="btc-to-cad.htm">
+                                        <img src="/images/switch.svg" alt="switch" width="15" height="20">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bigtext uclabel" align="right">
+                                    <label for="ucto">To:</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="ucto" class="ucdcinput" id="ucto" onKeyUp="ucDCUpdateResult(1);">
+                                </td>
+                                <td class="bigtext">
+                                    <label for="ucto">
+                                        <b>BTC</b>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="uclabel">&nbsp;</td>
+                                <td align="center">
+                                    <input type="hidden" name="ucfromunit" id="ucfromunit" value="CAD [Canadian Dollar] [1.34265]">
+                                    <input type="hidden" name="uctounit" id="uctounit" value="BTC [Bitcoin] [0.000036790967]">
+                                    <input type="submit" value="Convert" class="ucdcsubmit" onclick="ucDCUpdateResult(processingType);return false;">
+                                    &nbsp;<input type="reset" value="Clear" class="ucdcsubmit">
+                                </td>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                        </table>
+                        <div id="ucresult" class="ucresulttext"></div>
+                    </div>
+                </form>
+                <script>
+                    noValidation = 0;
+                    var processingType = 0;
+                    function timeConverter(UNIX_timestamp) {
+                        var a = new Date(UNIX_timestamp * 1000);
+                        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        var year = a.getFullYear();
+                        var month = months[a.getMonth()];
+                        var date = a.getDate();
+                        var hour = a.getHours();
+                        var min = a.getMinutes();
+                        var sec = a.getSeconds();
+                        var time = month + '. ' + date + ', ' + year + ' ' + hour + ':' + min + ':' + sec;
+                        return time;
+                    }
+                    document.write("<div style=\"font-size:11px;text-align:center;\">based on the " + timeConverter(1685804408) + " exchange rate from openexchangerates.org.</div>");
+                </script>
+                <br>
+                <br>
+                <h3>CAD to BTC Conversion Table</h3>
+                <table class="datatable">
+                    <tr>
+                        <th align="right">CAD [Canadian Dollar]</th>
+                        <th>BTC [Bitcoin]</th>
+                    </tr>
+                    <tr>
+                        <td align="right">0.01 Canadian Dollar</td>
+                        <td>2.7401755483559E-7 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">0.1 Canadian Dollar</td>
+                        <td>2.7401755483559E-6 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">1 Canadian Dollar</td>
+                        <td>2.74018E-5 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">2 Canadian Dollar</td>
+                        <td>5.48035E-5 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">3 Canadian Dollar</td>
+                        <td>8.22053E-5 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">5 Canadian Dollar</td>
+                        <td>0.0001370088 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">10 Canadian Dollar</td>
+                        <td>0.0002740176 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">20 Canadian Dollar</td>
+                        <td>0.0005480351 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">50 Canadian Dollar</td>
+                        <td>0.0013700878 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">100 Canadian Dollar</td>
+                        <td>0.0027401755 Bitcoin</td>
+                    </tr>
+                    <tr>
+                        <td align="right">1000 Canadian Dollar</td>
+                        <td>0.0274017555 Bitcoin</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <h3>How to Convert CAD to BTC</h3>
+                <p class="bigtext">
+                    1 Canadian Dollar = 2.74018E-5 Bitcoin<br>
+                    1 Bitcoin = 36494.012239472 Canadian Dollar<br>
+                </p>
+                <p class="bigtext">
+                    <b>Example:</b>
+                    convert 15 Canadian Dollar to Bitcoin:<br>15 Canadian Dollar = 15 &times;2.74018E-5 Bitcoin = 0.0004110263 Bitcoin
+                </p>
+                <br>
+                <h3>Popular Currency Conversions</h3>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" id="homelist">
+                    <tr>
+                        <td valign="top" width="50%">
+                            <ul>
+                                <li>
+                                    <a href="/currency/eur-to-usd.htm">EUR to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/gbp-to-usd.htm">GBP to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/mxn-to-usd.htm">MXN to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/aud-to-usd.htm">AUD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/brl-to-usd.htm">BRL to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cad-to-usd.htm">CAD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/chf-to-usd.htm">CHF to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cny-to-usd.htm">CNY to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/inr-to-usd.htm">INR to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/jpy-to-usd.htm">JPY to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/rub-to-usd.htm">RUB to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/hkd-to-usd.htm">HKD to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-usd.htm">BTC to USD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/aud-to-btc.htm">AUD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/brl-to-btc.htm">BRL to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/cad-to-btc.htm">CAD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/chf-to-btc.htm">CHF to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/eur-to-btc.htm">EUR to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/gbp-to-btc.htm">GBP to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/inr-to-btc.htm">INR to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/jpy-to-btc.htm">JPY to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/mxn-to-btc.htm">MXN to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/rub-to-btc.htm">RUB to BTC</a>
+                                </li>
+                            </ul>
+                        </td>
+                        <td valign="top" width="50%">
+                            <ul>
+                                <li>
+                                    <a href="/currency/usd-to-eur.htm">USD to EUR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-gbp.htm">USD to GBP</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-mxn.htm">USD to MXN</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-aud.htm">USD to AUD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-brl.htm">USD to BRL</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-cad.htm">USD to CAD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-chf.htm">USD to CHF</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-cny.htm">USD to CNY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-inr.htm">USD to INR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-jpy.htm">USD to JPY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-rub.htm">USD to RUB</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-hkd.htm">USD to HKD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/usd-to-btc.htm">USD to BTC</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-aud.htm">BTC to AUD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-brl.htm">BTC to BRL</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-cad.htm">BTC to CAD</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-chf.htm">BTC to CHF</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-eur.htm">BTC to EUR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-gbp.htm">BTC to GBP</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-inr.htm">BTC to INR</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-jpy.htm">BTC to JPY</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-mxn.htm">BTC to MXN</a>
+                                </li>
+                                <li>
+                                    <a href="/currency/btc-to-rub.htm">BTC to RUB</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <h3>Convert CAD to Other Currency Units</h3>
+                <div id="toother">
+                    <div>
+                        <a href="cad-to-usd.htm">CAD to USD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-eur.htm">CAD to EUR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-aud.htm">CAD to AUD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-chf.htm">CAD to CHF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cny.htm">CAD to CNY</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-eur.htm">CAD to EUR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gbp.htm">CAD to GBP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-inr.htm">CAD to INR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-jpy.htm">CAD to JPY</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mxn.htm">CAD to MXN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-break.htm">CAD to Break</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-aed.htm">CAD to AED</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-afn.htm">CAD to AFN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-all.htm">CAD to ALL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-amd.htm">CAD to AMD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ang.htm">CAD to ANG</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-aoa.htm">CAD to AOA</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ars.htm">CAD to ARS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-awg.htm">CAD to AWG</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-azn.htm">CAD to AZN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bam.htm">CAD to BAM</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bbd.htm">CAD to BBD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bdt.htm">CAD to BDT</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bgn.htm">CAD to BGN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bhd.htm">CAD to BHD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bif.htm">CAD to BIF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bmd.htm">CAD to BMD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bnd.htm">CAD to BND</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bob.htm">CAD to BOB</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-brl.htm">CAD to BRL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bsd.htm">CAD to BSD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-btn.htm">CAD to BTN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bwp.htm">CAD to BWP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-byn.htm">CAD to BYN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-bzd.htm">CAD to BZD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cdf.htm">CAD to CDF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-clf.htm">CAD to CLF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-clp.htm">CAD to CLP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cnh.htm">CAD to CNH</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cop.htm">CAD to COP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-crc.htm">CAD to CRC</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cuc.htm">CAD to CUC</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cup.htm">CAD to CUP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-cve.htm">CAD to CVE</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-czk.htm">CAD to CZK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-djf.htm">CAD to DJF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-dkk.htm">CAD to DKK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-dop.htm">CAD to DOP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-dzd.htm">CAD to DZD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-egp.htm">CAD to EGP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ern.htm">CAD to ERN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-etb.htm">CAD to ETB</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-fjd.htm">CAD to FJD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-fkp.htm">CAD to FKP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gel.htm">CAD to GEL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ggp.htm">CAD to GGP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ghs.htm">CAD to GHS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gip.htm">CAD to GIP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gmd.htm">CAD to GMD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gnf.htm">CAD to GNF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gtq.htm">CAD to GTQ</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-gyd.htm">CAD to GYD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-hkd.htm">CAD to HKD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-hnl.htm">CAD to HNL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-hrk.htm">CAD to HRK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-htg.htm">CAD to HTG</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-huf.htm">CAD to HUF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-idr.htm">CAD to IDR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ils.htm">CAD to ILS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-imp.htm">CAD to IMP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-iqd.htm">CAD to IQD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-irr.htm">CAD to IRR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-isk.htm">CAD to ISK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-jep.htm">CAD to JEP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-jmd.htm">CAD to JMD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-jod.htm">CAD to JOD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kes.htm">CAD to KES</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kgs.htm">CAD to KGS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-khr.htm">CAD to KHR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kmf.htm">CAD to KMF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kpw.htm">CAD to KPW</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-krw.htm">CAD to KRW</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kwd.htm">CAD to KWD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kyd.htm">CAD to KYD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-kzt.htm">CAD to KZT</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lak.htm">CAD to LAK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lbp.htm">CAD to LBP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lkr.htm">CAD to LKR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lrd.htm">CAD to LRD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lsl.htm">CAD to LSL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-lyd.htm">CAD to LYD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mad.htm">CAD to MAD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mdl.htm">CAD to MDL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mga.htm">CAD to MGA</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mkd.htm">CAD to MKD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mmk.htm">CAD to MMK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mnt.htm">CAD to MNT</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mop.htm">CAD to MOP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mru.htm">CAD to MRU</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mur.htm">CAD to MUR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mvr.htm">CAD to MVR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mwk.htm">CAD to MWK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-myr.htm">CAD to MYR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-mzn.htm">CAD to MZN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-nad.htm">CAD to NAD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ngn.htm">CAD to NGN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-nio.htm">CAD to NIO</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-nok.htm">CAD to NOK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-npr.htm">CAD to NPR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-nzd.htm">CAD to NZD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-omr.htm">CAD to OMR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pab.htm">CAD to PAB</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pen.htm">CAD to PEN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pgk.htm">CAD to PGK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-php.htm">CAD to PHP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pkr.htm">CAD to PKR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pln.htm">CAD to PLN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-pyg.htm">CAD to PYG</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-qar.htm">CAD to QAR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ron.htm">CAD to RON</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-rsd.htm">CAD to RSD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-rub.htm">CAD to RUB</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-rwf.htm">CAD to RWF</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sar.htm">CAD to SAR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sbd.htm">CAD to SBD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-scr.htm">CAD to SCR</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sdg.htm">CAD to SDG</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sek.htm">CAD to SEK</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sgd.htm">CAD to SGD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-shp.htm">CAD to SHP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sll.htm">CAD to SLL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-sos.htm">CAD to SOS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-srd.htm">CAD to SRD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ssp.htm">CAD to SSP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-std.htm">CAD to STD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-stn.htm">CAD to STN</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-svc.htm">CAD to SVC</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-syp.htm">CAD to SYP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-szl.htm">CAD to SZL</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-thb.htm">CAD to THB</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-tjs.htm">CAD to TJS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-tmt.htm">CAD to TMT</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-tnd.htm">CAD to TND</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-top.htm">CAD to TOP</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-try.htm">CAD to TRY</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ttd.htm">CAD to TTD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-twd.htm">CAD to TWD</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-tzs.htm">CAD to TZS</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-uah.htm">CAD to UAH</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-ugx.htm">CAD to UGX</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-uyu.htm">CAD to UYU</a>
+                    </div>
+                    <div>
+                        <a href="cad-to-uzs.htm">CAD to UZS</a>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
