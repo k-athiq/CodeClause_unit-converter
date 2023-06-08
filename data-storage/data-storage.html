@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <title>Data Storage Converter</title>
+        <meta name="description" content="Free online data storage converter - converts between 41 units of data storage, including bit [b], nibble, byte [B], character, etc. Also, explore many other unit converters or learn more about data storage unit conversions."/>
+        <link rel="stylesheet" href="D:\shummu\Documents\un 1\HTML\style-n.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="D:\shummu\Documents\un 1\HTML\js\common.js" async></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="//d15gdne58bo42a.cloudfront.net/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="//d15gdne58bo42a.cloudfront.net/icon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="//d15gdne58bo42a.cloudfront.net/icon-16x16.png">
+        <link rel="manifest" href="D:\shummu\Documents\un 1\HTML\manifest.json">
+    </head>
+    <body>
+        <div id="headerout">
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="//d15gdne58bo42a.cloudfront.net/images/logo.svg" width="288" height="28" alt="UnitConverters.net">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="contentout">
+            <div id="content">
+                <img src="//d15gdne58bo42a.cloudfront.net/images/calculator.svg" width="22" height="31" align="right" border="0" onClick="quickCaclShow('');" alt="calculator">
+                <div class="topnav">
+                    <a href="D:\shummu\Documents\un 1\HTML\uc.html">Home</a>
+                    / <a href='D:\shummu\Documents\un 1\HTML\common converter.html'>Common Converters</a>
+                    / Data Storage Converter
+                </div>
+                <h1>Data Storage Converter</h1>
+                <div id="unquickcalc" style="display:none;"></div>
+                <div id="ucresult" class="ucresulttext"></div>
+                <form>
+                    <table id="uctable">
+                        <tr>
+                            <td class="uccell">
+                                <label for="ucfrom">From:</label>
+                                <br>
+                                <input type="text" name="ucfrom" class="ucinput" id="ucfrom" onKeyUp="ucUpdateResult();" autofocus>
+                            </td>
+                            <td class="uccell">
+                                <label for="ucto">To:</label>
+                                <br>
+                                <input type="text" name="ucto" class="ucinput" id="ucto" style="background-color:#eeeeee;" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uccell">
+                                <select name="ucfromunit" id="ucfromunit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="bit [b] [1.0E+28]" selected>bit [b]</option>
+                                    <option value="nibble [2.5E+27]">nibble</option>
+                                    <option value="byte [B] [1.25E+27]">byte [B]</option>
+                                    <option value="character [1.25E+27]">character</option>
+                                    <option value="word [6.25E+26]">word</option>
+                                    <option value="MAPM-word [3.125E+26]">MAPM-word</option>
+                                    <option value="quadruple-word [1.5625E+26]">quadruple-word</opti
+
+
+
+on>
+                                    <option value="block [2.44140625E+24]">block</option>
+                                    <option value="kilobit [kb] [9.765625E+24]">kilobit [kb]</option>
+                                    <option value="kilobyte [kB] [1.220703125E+24]">kilobyte [kB]</option>
+                                    <option value="kilobyte (10^3 bytes) [1.25E+24]">kilobyte (10^3 bytes)</option>
+                                    <option value="megabit [Mb] [9.5367431640625E+21]">megabit [Mb]</option>
+                                    <option value="megabyte [MB] [1.1920928955078E+21]">megabyte [MB]</option>
+                                    <option value="megabyte (10^6 bytes) [1.25E+21]">megabyte (10^6 bytes)</option>
+                                    <option value="gigabit [Gb] [9.3132257461548E+18]">gigabit [Gb]</option>
+                                    <option value="gigabyte [GB] [1.1641532182693E+18]">gigabyte [GB]</option>
+                                    <option value="gigabyte (10^9 bytes) [1.25E+18]">gigabyte (10^9 bytes)</option>
+                                    <option value="terabit [Tb] [9.0949470177293E+15]">terabit [Tb]</option>
+                                    <option value="terabyte [TB] [1.1368683772162E+15]">terabyte [TB]</option>
+                                    <option value="terabyte (10^12 bytes) [1.25E+15]">terabyte (10^12 bytes)</option>
+                                    <option value="petabit [Pb] [8881784197001.2]">petabit [Pb]</option>
+                                    <option value="petabyte [PB] [1110223024625.2]">petabyte [PB]</option>
+                                    <option value="petabyte (10^15 bytes) [1250000000000]">petabyte (10^15 bytes)</option>
+                                    <option value="exabit [Eb] [8673617379.884]">exabit [Eb]</option>
+                                    <option value="exabyte [EB] [1084202172.4855]">exabyte [EB]</option>
+                                    <option value="exabyte (10^18 bytes) [1250000000]">exabyte (10^18 bytes)</option>
+                                    <option value="floppy disk (3.5&#34;, DD) [1.7150728837373E+21]">floppy disk (3.5 &#34;, DD)</option>
+                                    <option value="floppy disk (3.5&#34;, HD) [8.5753644186863E+20]">floppy disk (3.5 &#34;, HD)</option>
+                                    <option value="floppy disk (3.5&#34;, ED) [4.2876822093432E+20]">floppy disk (3.5 &#34;, ED)</option>
+                                    <option value="floppy disk (5.25&#34;, DD) [3.4301457674745E+21]">floppy disk (5.25 &#34;, DD)</option>
+                                    <option value="floppy disk (5.25&#34;, HD) [1.029694749051E+21]">floppy disk (5.25 &#34;, HD)</option>
+                                    <option value="Zip 100 [1.2446248139236E+19]">Zip 100</option>
+                                    <option value="Zip 250 [4.9784992556944E+18]">Zip 250</option>
+                                    <option value="Jaz 1GB [1.1641532182693E+18]">Jaz 1GB</option>
+                                    <option value="Jaz 2GB [5.8207660913467E+17]">Jaz 2GB</option>
+                                    <option value="CD (74 minute) [1.8353788400472E+18]">CD (74 minute)</option>
+                                    <option value="CD (80 minute) [1.6977254283523E+18]">CD (80 minute)</option>
+                                    <option value="DVD (1 layer, 1 side) [2.4769217409986E+17]">DVD (1 layer, 1 side)</option>
+                                    <option value="DVD (2 layer, 1 side) [1.3695920214934E+17]">DVD (2 layer, 1 side)</option>
+                                    <option value="DVD (1 layer, 2 side) [1.2384608704993E+17]">DVD (1 layer, 2 side)</option>
+                                    <option value="DVD (2 layer, 2 side) [6.8479601074668E+16]">DVD (2 layer, 2 side)</option>
+                                </select>
+                            </td>
+                            <td class="uccell">
+                                <select name="uctounit" id="uctounit" size="15" onChange="ucUpdateResult();" class="ucselect">
+                                    <option value="bit [b] [1.0E+28]">bit [b]</option>
+                                    <option value="nibble [2.5E+27]" selected>nibble</option>
+                                    <option value="byte [B] [1.25E+27]">byte [B]</option>
+                                    <option value="character [1.25E+27]">character</option>
+                                    <option value="word [6.25E+26]">word</option>
+                                    <option value="MAPM-word [3.125E+26]">MAPM-word</option>
+                                    <option value="quadruple-word [1.5625E+26]">quadruple-word</option>
+                                    <option value="block [2.44140625E+24]">block</option>
+                                    <option value="kilobit [kb] [9.765625E+24]">kilobit [kb]</option>
+                                    <option value="kilobyte [kB] [1.220703125E+24]">kilobyte [kB]</option>
+                                    <option value="kilobyte (10^3 bytes) [1.25E+24]">kilobyte (10^3 bytes)</option>
+                                    <option value="megabit [Mb] [9.5367431640625E+21]">megabit [Mb]</option>
+                                    <option value="megabyte [MB] [1.1920928955078E+21]">megabyte [MB]</option>
+                                    <option value="megabyte (10^6 bytes) [1.25E+21]">megabyte (10^6 bytes)</option>
+                                    <option value="gigabit [Gb] [9.3132257461548E+18]">gigabit [Gb]</option>
+                                    <option value="gigabyte [GB] [1.1641532182693E+18]">gigabyte [GB]</option>
+                                    <option value="gigabyte (10^9 bytes) [1.25E+18]">gigabyte (10^9 bytes)</option>
+                                    <option value="terabit [Tb] [9.0949470177293E+15]">terabit [Tb]</option>
+                                    <option value="terabyte [TB] [1.1368683772162E+15]">terabyte [TB]</option>
+                                    <option value="terabyte (10^12 bytes) [1.25E+15]">terabyte (10^12 bytes)</option>
+                                    <option value="petabit [Pb] [8881784197001.2]">petabit [Pb]</option>
+                                    <option value="petabyte [PB] [1110223024625.2]">petabyte [PB]</option>
+                                    <option value="petabyte (10^15 bytes) [1250000000000]">petabyte (10^15 bytes)</option>
+                                    <option value="exabit [Eb] [8673617379.884]">exabit [Eb]</option>
+                                    <option value="exabyte [EB] [1084202172.4855]">exabyte [EB]</option>
+                                    <option value="exabyte (10^18 bytes) [1250000000]">exabyte (10^18 bytes)</option>
+                                    <option value="floppy disk (3.5&#34;, DD) [1.7150728837373E+21]">floppy disk (3.5 &#34;, DD)</option>
+                                    <option value="floppy disk (3.5&#34;, HD) [8.5753644186863E+20]">floppy disk (3.5 &#34;, HD)</option>
+                                    <option value="floppy disk (3.5&#34;, ED) [4.2876822093432E+20]">floppy disk (3.5 &#34;, ED)</option>
+                                    <option value="floppy disk (5.25&#34;, DD) [3.4301457674745E+21]">floppy disk (5.25 &#34;, DD)</option>
+                                    <option value="floppy disk (5.25&#34;, HD) [1.029694749051E+21]">floppy disk (5.25 &#34;, HD)</option>
+                                    <option value="Zip 100 [1.2446248139236E+19]">Zip 100</option>
+                                    <option value="Zip 250 [4.9784992556944E+18]">Zip 250</option>
+                                    <option value="Jaz 1GB [1.1641532182693E+18]">Jaz 1GB</option>
+                                    <option value="Jaz 2GB [5.8207660913467E+17]">Jaz 2GB</option>
+                                    <option value="CD (74 minute) [1.8353788400472E+18]">CD (74 minute)</option>
+                                    <option value="CD (80 minute) [1.6977254283523E+18]">CD (80 minute)</option>
+                                    <option value="DVD (1 layer, 1 side) [2.4769217409986E+17]">DVD (1 layer, 1 side)</option>
+                                    <option value="DVD (2 layer, 1 side) [1.3695920214934E+17]">DVD (2 layer, 1 side)</option>
+                                    <option value="DVD (1 layer, 2 side) [1.2384608704993E+17]">DVD (1 layer, 2 side)</option>
+                                    <option value="DVD (2 layer, 2 side) [6.8479601074668E+16]">DVD (2 layer, 2 side)</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <script>
+                    noValidation = 0;
+                </script>
+                <br>
+                <h3>Popular data storage unit conversions</h3>
+                <div id="toother">
+                    <div>
+                        <a href="/data-storage/mb-to-gb.htm">MB to GB</a>
+                    </div>
+                    <div>
+                        <a href="/data-storage/gb-to-mb.htm">GB to MB</a>
+                    </div>
+                    <div>
+                        <a href="/data-storage/kb-to-mb.htm">KB to MB</a>
+                    </div>
+                    <div>
+                        <a href="/data-storage/mb-to-kb.htm">MB to KB</a>
+                    </div>
+                    <div>
+                        <a href="/data-storage/kb-to-gb.htm">KB to GB</a>
+                    </div>
+                    <div>
+                        <a href="/data-storage/gb-to-kb.htm">GB to KB</a>
+                    </div>
+                </div>
+                <br>
+                <h3>Complete list of data storage units for conversion</h3>
+                <ul class="allunits">
+                    <li>bit [b]</li>
+                    <li>
+                        1 nibble = 4 bit [b]
+                        <div>
+                            <a href="/data-storage/nibble-to-bit.htm">nibble to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-nibble.htm">bit to nibble</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 byte [B] = 8 bit [b]
+                        <div>
+                            <a href="/data-storage/byte-to-bit.htm">byte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-byte.htm">bit to byte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 character = 8 bit [b]
+                        <div>
+                            <a href="/data-storage/character-to-bit.htm">character to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-character.htm">bit to character</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 word = 16 bit [b]
+                        <div>
+                            <a href="/data-storage/word-to-bit.htm">word to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-word.htm">bit to word</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 MAPM-word = 32 bit [b]
+                        <div>
+                            <a href="/data-storage/mapm-word-to-bit.htm">MAPM-word to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-mapm-word.htm">bit to MAPM-word</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 quadruple-word = 64 bit [b]
+                        <div>
+                            <a href="/data-storage/quadruple-word-to-bit.htm">quadruple-word to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-quadruple-word.htm">bit to quadruple-word</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 block = 4096 bit [b]
+                        <div>
+                            <a href="/data-storage/block-to-bit.htm">block to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-block.htm">bit to block</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 kilobit [kb] = 1024 bit [b]
+                        <div>
+                            <a href="/data-storage/kilobit-to-bit.htm">kilobit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-kilobit.htm">bit to kilobit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 kilobyte [kB] = 8192 bit [b]
+                        <div>
+                            <a href="/data-storage/kilobyte-to-bit.htm">kilobyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-kilobyte.htm">bit to kilobyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 kilobyte (10^3 bytes) = 8000 bit [b]
+                        <div>
+                            <a href="/data-storage/kilobyte-10-3-bytes-to-bit.htm">kilobyte (10^3 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-kilobyte-10-3-bytes.htm">bit to kilobyte (10^3 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 megabit [Mb] = 1048576 bit [b]
+                        <div>
+                            <a href="/data-storage/megabit-to-bit.htm">megabit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-megabit.htm">bit to megabit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 megabyte [MB] = 8388608 bit [b]
+                        <div>
+                            <a href="/data-storage/megabyte-to-bit.htm">megabyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-megabyte.htm">bit to megabyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 megabyte (10^6 bytes) = 8000000 bit [b]
+                        <div>
+                            <a href="/data-storage/megabyte-10-6-bytes-to-bit.htm">megabyte (10^6 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-megabyte-10-6-bytes.htm">bit to megabyte (10^6 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 gigabit [Gb] = 1073741824 bit [b]
+                        <div>
+                            <a href="/data-storage/gigabit-to-bit.htm">gigabit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-gigabit.htm">bit to gigabit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 gigabyte [GB] = 8589934592 bit [b]
+                        <div>
+                            <a href="/data-storage/gigabyte-to-bit.htm">gigabyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-gigabyte.htm">bit to gigabyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 gigabyte (10^9 bytes) = 8000000000 bit [b]
+                        <div>
+                            <a href="/data-storage/gigabyte-10-9-bytes-to-bit.htm">gigabyte (10^9 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-gigabyte-10-9-bytes.htm">bit to gigabyte (10^9 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 terabit [Tb] = 1099511627776 bit [b]
+                        <div>
+                            <a href="/data-storage/terabit-to-bit.htm">terabit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-terabit.htm">bit to terabit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 terabyte [TB] = 8796093022208 bit [b]
+                        <div>
+                            <a href="/data-storage/terabyte-to-bit.htm">terabyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-terabyte.htm">bit to terabyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 terabyte (10^12 bytes) = 8000000000000 bit [b]
+                        <div>
+                            <a href="/data-storage/terabyte-10-12-bytes-to-bit.htm">terabyte (10^12 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-terabyte-10-12-bytes.htm">bit to terabyte (10^12 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 petabit [Pb] = 1.1258999068426E+15 bit [b]
+                        <div>
+                            <a href="/data-storage/petabit-to-bit.htm">petabit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-petabit.htm">bit to petabit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 petabyte [PB] = 9.007199254741E+15 bit [b]
+                        <div>
+                            <a href="/data-storage/petabyte-to-bit.htm">petabyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-petabyte.htm">bit to petabyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 petabyte (10^15 bytes) = 8.0E+15 bit [b]
+                        <div>
+                            <a href="/data-storage/petabyte-10-15-bytes-to-bit.htm">petabyte (10^15 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-petabyte-10-15-bytes.htm">bit to petabyte (10^15 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 exabit [Eb] = 1.1529215046068E+18 bit [b]
+                        <div>
+                            <a href="/data-storage/exabit-to-bit.htm">exabit to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-exabit.htm">bit to exabit</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 exabyte [EB] = 9.2233720368548E+18 bit [b]
+                        <div>
+                            <a href="/data-storage/exabyte-to-bit.htm">exabyte to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-exabyte.htm">bit to exabyte</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 exabyte (10^18 bytes) = 8.0E+18 bit [b]
+                        <div>
+                            <a href="/data-storage/exabyte-10-18-bytes-to-bit.htm">exabyte (10^18 bytes) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-exabyte-10-18-bytes.htm">bit to exabyte (10^18 bytes)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 floppy disk (3.5 &#34;, DD) = 5830656 bit [b]
+                        <div>
+                            <a href="/data-storage/floppy-disk-3-5-34-dd-to-bit.htm">floppy disk (3.5 &#34;, DD) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-floppy-disk-3-5-34-dd.htm">bit to floppy disk (3.5 &#34;, DD)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 floppy disk (3.5 &#34;, HD) = 11661312 bit [b]
+                        <div>
+                            <a href="/data-storage/floppy-disk-3-5-34-hd-to-bit.htm">floppy disk (3.5 &#34;, HD) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-floppy-disk-3-5-34-hd.htm">bit to floppy disk (3.5 &#34;, HD)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 floppy disk (3.5 &#34;, ED) = 23322624 bit [b]
+                        <div>
+                            <a href="/data-storage/floppy-disk-3-5-34-ed-to-bit.htm">floppy disk (3.5 &#34;, ED) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-floppy-disk-3-5-34-ed.htm">bit to floppy disk (3.5 &#34;, ED)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 floppy disk (5.25 &#34;, DD) = 2915328 bit [b]
+                        <div>
+                            <a href="/data-storage/floppy-disk-5-25-34-dd-to-bit.htm">floppy disk (5.25 &#34;, DD) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-floppy-disk-5-25-34-dd.htm">bit to floppy disk (5.25 &#34;, DD)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 floppy disk (5.25 &#34;, HD) = 9711616 bit [b]
+                        <div>
+                            <a href="/data-storage/floppy-disk-5-25-34-hd-to-bit.htm">floppy disk (5.25 &#34;, HD) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-floppy-disk-5-25-34-hd.htm">bit to floppy disk (5.25 &#34;, HD)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Zip 100 = 803454976 bit [b]
+                        <div>
+                            <a href="/data-storage/zip-100-to-bit.htm">Zip 100 to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-zip-100.htm">bit to Zip 100</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Zip 250 = 2008637440 bit [b]
+                        <div>
+                            <a href="/data-storage/zip-250-to-bit.htm">Zip 250 to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-zip-250.htm">bit to Zip 250</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Jaz 1GB = 8589934592 bit [b]
+                        <div>
+                            <a href="/data-storage/jaz-1gb-to-bit.htm">Jaz 1GB to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-jaz-1gb.htm">bit to Jaz 1GB</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 Jaz 2GB = 17179869184 bit [b]
+                        <div>
+                            <a href="/data-storage/jaz-2gb-to-bit.htm">Jaz 2GB to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-jaz-2gb.htm">bit to Jaz 2GB</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 CD (74 minute) = 5448466432 bit [b]
+                        <div>
+                            <a href="/data-storage/cd-74-minute-to-bit.htm">CD (74 minute) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-cd-74-minute.htm">bit to CD (74 minute)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 CD (80 minute) = 5890233976 bit [b]
+                        <div>
+                            <a href="/data-storage/cd-80-minute-to-bit.htm">CD (80 minute) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-cd-80-minute.htm">bit to CD (80 minute)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 DVD (1 layer, 1 side) = 40372692582.4 bit [b]
+                        <div>
+                            <a href="/data-storage/dvd-1-layer-1-side-to-bit.htm">DVD (1 layer, 1 side) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-dvd-1-layer-1-side.htm">bit to DVD (1 layer, 1 side)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 DVD (2 layer, 1 side) = 73014444032 bit [b]
+                        <div>
+                            <a href="/data-storage/dvd-2-layer-1-side-to-bit.htm">DVD (2 layer, 1 side) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-dvd-2-layer-1-side.htm">bit to DVD (2 layer, 1 side)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 DVD (1 layer, 2 side) = 80745385164.8 bit [b]
+                        <div>
+                            <a href="/data-storage/dvd-1-layer-2-side-to-bit.htm">DVD (1 layer, 2 side) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-dvd-1-layer-2-side.htm">bit to DVD (1 layer, 2 side)</a>
+                        </div>
+                    </li>
+                    <li>
+                        1 DVD (2 layer, 2 side) = 146028888064 bit [b]
+                        <div>
+                            <a href="/data-storage/dvd-2-layer-2-side-to-bit.htm">DVD (2 layer, 2 side) to bit</a>
+                            , &nbsp;<a href="/data-storage/bit-to-dvd-2-layer-2-side.htm">bit to DVD (2 layer, 2 side)</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <div id="rightAdUnit" style="text-align:center;">
+                    <div style="min-height:280px; text-align:center;">
+                        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                        <script>
+                            window.googletag = window.googletag || {
+                                cmd: []
+                            };
+                            googletag.cmd.push(function() {
+                                googletag.defineSlot('/1057446/UnitConverters-Top-Right-Desktop', [[336, 280], [300, 250]], 'div-gpt-ad-1589566514232-0').addService(googletag.pubads());
+                                googletag.pubads().enableSingleRequest();
+                                googletag.enableServices();
+                            });
+                        </script>
+                        <!-- /1057446/UnitConverters-Top-Right-Desktop -->
+                        <div id='div-gpt-ad-1589566514232-0'>
+                            <script>
+                                googletag.cmd.push(function() {
+                                    googletag.display('div-gpt-ad-1589566514232-0');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div id="othercalc"></div>
+                <script>
+                    var navSectionName = "Common Converters";
+                </script>
+            </div>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">
+            <div id="footerin">
+                <div id="footernav">
+                    <a href="/about-us.php">about us</a>
+                    | <a href="/about-us.php#terms">terms of use</a>
+                    | <a href="/about-us.php#privacy">privacy policy</a>
+                    | <a href="/sitemap.php">sitemap</a>
+                    &nbsp;&copy;2008 - 2023 <a href="https://www.unitconverters.net">unitconverters.net</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
